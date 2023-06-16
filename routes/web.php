@@ -22,6 +22,6 @@ Route::get('/', function () {
 Route::get('/task/belumselesai', [taskController::class, 'indexBelumSelesai']);
 Route::get('/task/selesai', [taskController::class, 'indexSelesai']);
 Route::put('/task/{id}/status', [taskController::class, 'updateTaskStatus']);
-Route::get('/task/detail', [taskController::class, 'detail']);
+Route::get('/task/{id}', [taskController::class, 'detail']);
 Route::resource('task', taskController::class);
 
