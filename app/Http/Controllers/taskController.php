@@ -61,8 +61,7 @@ class taskController extends Controller
 
         $data = [
             'judul' => $request->judul,
-            'deskripsi' => $request->deskripsi,
-            'status' => $request->status
+            'deskripsi' => $request->deskripsi
         ];
         Task::where('id', $id)->update($data);
         return redirect()->to('task')->with('success', 'Berhasil melakukan update task');
@@ -87,6 +86,8 @@ class taskController extends Controller
         $data = Task::all();
         return view('task.detail')->with('data',$data);
     }
+
+    
 
     public function indexBelumSelesai(){
         $data = Task::where('status','=', 'Belum Selesai')->get();
