@@ -64,7 +64,7 @@
                 
                 <td>
                     <div class="pb-3">
-                        <a href='{{ url('task/'.$item->id) }}' class="btn btn-primary">Detail</a>
+                        <a href='{{ route('task.show',$item->id) }}' class="btn btn-primary">Detail</a>
                     </div>
                 </td>
             </tr>

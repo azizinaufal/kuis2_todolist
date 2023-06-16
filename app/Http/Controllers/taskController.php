@@ -45,7 +45,8 @@ class taskController extends Controller
     
     public function show(string $id)
     {
-        //
+        $data = Task::where ('id',$id)->get();
+        return view('task.detail')->with('data',$data);
     }
 
     
@@ -82,10 +83,7 @@ class taskController extends Controller
         return redirect()->to('task')->with('success', 'Berhasil melakukan update task');
     }
 
-    public function detail(string $id){
-        $data = Task::where ('id',$id)->get();
-        return view('task.detail')->with('data',$data);
-    }
+   
 
     
 

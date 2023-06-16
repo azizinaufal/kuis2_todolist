@@ -8,6 +8,7 @@
   </head>
   <body class="bg-light">
     <main class="container">
+        <H2>To Do List</H2>
         
         @include('komponen.pesan')
 
