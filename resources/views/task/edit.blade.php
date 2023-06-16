@@ -20,15 +20,7 @@
                         <input type="text" class="form-control" name='deskripsi' value="{{ $data->deskripsi }}" id="deskripsi">
                     </div>
                 </div>
-                <div class="mb-3 row">
-                    <label for="status" class="col-sm-2 col-form-label">Status</label>
-                    <div class="col-sm-10">
-                        <select name="status" id="status">
-                            <option value="Belum Selesai" value="{{ $data->status }}">Belum Selesai</option>
-                            <option value="Selesai" value="{{ $data->status }}">Selesai</option>
-                        </select>
-                    </div>
-                </div>
+
                 <div class="mb-3 row">
                     <label for="jurusan" class="col-sm-2 col-form-label"></label>
                     <div class="col-sm-10"><button type="submit" class="btn btn-primary" name="submit">SIMPAN</button></div>
